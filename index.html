@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="USGStudio - Crafting Next-Gen Mobile Apps & Games">
+
+    <!-- OpenGraph SEO Tags -->
+    <meta property="og:title" content="USGStudio | Mobile Apps & Game Development">
+    <meta property="og:description"
+        content="We transform bold ideas into immersive digital experiences. Level up your business with cutting-edge mobile solutions.">
+    <meta property="og:image" content="hero_graphic.png">
+    <meta property="og:type" content="website">
+
+    <title>USGStudio | Mobile Apps & Game Development</title>
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="custom-cursor"></div>
+
+    <!-- Background Particles -->
+    <canvas id="particles"></canvas>
+
+    <!-- Navbar -->
+    <header id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="#">
+                    <img src="Logo.png" alt="USGStudio Logo" class="nav-logo-img" style="height: 40px; width: auto;">
+                    <span class="accent">Studio</span>
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Games</a></li>
+                    <li><a href="#contact" class="btn btn-outline">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Crafting <span class="gradient-text">Next-Gen</span><br>Mobile Apps & Games</h1>
+                <p class="hero-subtitle">We transform bold ideas into immersive digital experiences. Level up your
+                    business with cutting-edge mobile solutions.</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">Our Services</a>
+                    <a href="#portfolio" class="btn btn-secondary">View Our Games</a>
+                </div>
+            </div>
+            <div class="hero-image" id="hero-3d-canvas"
+                style="width: 100%; height: 500px; display: flex; justify-content: center; align-items: center;">
+                <!-- Three.js will render here -->
+            </div>
+        </div>
+        <div class="hero-glow"></div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" style="background-color: var(--bg-secondary);">
+        <div class="container about-content reveal">
+            <div class="about-text">
+                <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">About <span
+                        class="accent">USGStudio</span></h2>
+                <p>Founded by passionate developers and designers, USGStudio is dedicated to pushing the boundaries of
+                    interactive entertainment and digital utility. We don't just write code; we craft digital
+                    experiences that resonate with users worldwide.</p>
+                <p style="margin-top: 1rem; color: var(--text-secondary);">With years of experience in the mobile
+                    industry, our team understands what it takes to stand out in a crowded app store. From the initial
+                    concept sketch to the final polished product, we are with you every step of the way.</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-box glass">
+                    <h3 class="gradient-text">50+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-box glass">
+                    <h3 class="gradient-text">2M+</h3>
+                    <p>Active Users</p>
+                </div>
+                <div class="stat-box glass">
+                    <h3 class="gradient-text">100%</h3>
+                    <p>Client Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container reveal">
+            <h2 class="section-title">What We <span class="accent">Do</span></h2>
+            <div class="services-grid">
+                <!-- Mobile App Dev Card -->
+                <div class="service-card glass">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                        </svg>
+                    </div>
+                    <h3>Mobile App Development</h3>
+                    <p>We build high-performance, intuitive, and scalable mobile applications for iOS and Android.
+                        Whether it's a utility app or a complex platform, we bring it to life.</p>
+                </div>
+                <!-- Game Dev Card -->
+                <div class="service-card glass">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="6" width="20" height="12" rx="2" ry="2"></rect>
+                            <path d="M6 12h4"></path>
+                            <path d="M8 10v4"></path>
+                            <path d="M15 11h.01"></path>
+                            <path d="M18 13h.01"></path>
+                        </svg>
+                    </div>
+                    <h3>Game Development</h3>
+                    <p>From addictive hyper-casual games to immersive 3D experiences, we develop engaging games using
+                        industry-leading engines like Unity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="features">
+        <div class="container reveal">
+            <h2 class="section-title">Why Choose <span class="accent">Us</span></h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🚀</div>
+                    <h4>High Performance</h4>
+                    <p>Our apps and games are optimized for speed, ensuring a buttery-smooth experience on all devices.
+                    </p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🎨</div>
+                    <h4>Stunning UI/UX</h4>
+                    <p>We design gorgeous interfaces that engage users and keep them coming back for more.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔒</div>
+                    <h4>Secure & Scalable</h4>
+                    <p>Built with enterprise-grade security and a scalable architecture to grow with your user base.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Placeholder -->
+    <section id="portfolio">
+        <div class="container reveal">
+            <h2 class="section-title">Our <span class="accent">Games</span></h2>
+            <p style="text-align: center; color: var(--text-secondary); margin-bottom: 3rem;">Check out our latest and
+                most popular game releases.</p>
+            <div class="portfolio-grid">
+                <div class="portfolio-card glass">
+                    <div class="portfolio-img">
+                        <img src="neon_rider.png" alt="Neon Rider Cover">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Neon Rider</h4>
+                        <p>A high-octane cyberpunk racing game for iOS and Android.</p>
+                    </div>
+                </div>
+                <div class="portfolio-card glass">
+                    <div class="portfolio-img">
+                        <img src="stellar_strategy.png" alt="Stellar Strategy Cover">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Stellar Strategy</h4>
+                        <p>An immersive sci-fi base-building and exploration experience.</p>
+                    </div>
+                </div>
+                <div class="portfolio-card glass">
+                    <div class="portfolio-img">
+                        <img src="pixel_puzzle.png" alt="Pixel Puzzle Quest Cover">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Pixel Puzzle Quest</h4>
+                        <p>A brain-teasing arcade puzzle game with beautiful retro aesthetics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" style="background-color: var(--bg-secondary);">
+        <div class="container reveal">
+            <h2 class="section-title">Client <span class="accent">Reviews</span></h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card glass">
+                    <p class="quote">"USGStudio completely transformed our mobile presence. The app they built for us is
+                        fast, beautiful, and our users absolutely love it."</p>
+                    <div class="client-info">
+                        <h4>Sarah Jenkins</h4>
+                        <span>Tech Startup Founder</span>
+                    </div>
+                </div>
+                <div class="testimonial-card glass">
+                    <p class="quote">"Working with their game dev team was a breeze. They took our rough concept and
+                        turned it into a polished, addictive game in record time."</p>
+                    <div class="client-info">
+                        <h4>David Chen</h4>
+                        <span>Indie Publisher</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container reveal">
+            <div class="contact-card glass">
+                <div class="contact-info">
+                    <h2>Ready to start your next project?</h2>
+                    <p>Let's build something amazing together. Fill out the form below to discuss your mobile app or
+                        game development needs.</p>
+                </div>
+                <form class="contact-form" action="contact.php" method="POST">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Tell us about your project..." rows="5"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <a href="#">USG<span class="accent">Studio</span></a>
+            </div>
+            <p class="copyright">&copy; 2026 USGStudio. All rights reserved. | <a href="privacy-policy.html"
+                    style="color: var(--text-secondary); text-decoration: underline;">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <!-- Three.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

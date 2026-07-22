@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | USGStudio</title>
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .policy-container {
+            max-width: 800px;
+            margin: 150px auto 100px;
+            padding: 0 2rem;
+            color: var(--text-secondary);
+        }
+
+        .policy-container h1,
+        .policy-container h2 {
+            color: var(--text-main);
+            margin-bottom: 1rem;
+        }
+
+        .policy-container h1 {
+            font-size: 2.5rem;
+        }
+
+        .policy-container h2 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .policy-container p,
+        .policy-container li {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .policy-container ul {
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+            list-style: disc;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="custom-cursor"></div>
+
+    <!-- Navbar -->
+    <header id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Logo.png" alt="USGStudio Logo" class="nav-logo-img" style="height: 40px; width: auto;">
+                    <span class="accent">Studio</span>
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html#hero">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#portfolio">Games</a></li>
+                    <li><a href="index.html#contact" class="btn btn-outline">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="policy-container">
+        <h1 class="gradient-text">Privacy Policy</h1>
+        <p><strong>Last Updated: July 2026</strong></p>
+
+        <p>USGStudio ("we", "our", or "us") operates mobile applications and games (the "Service"). This page informs
+            you of our policies regarding the collection, use, and disclosure of personal data when you use our Service
+            and the choices you have associated with that data.</p>
+
+        <h2>1. Information Collection and Use</h2>
+        <p>We do not collect any personally identifiable information unless you explicitly provide it to us (for
+            example, by using our Contact Form). However, some of our apps and games use third-party services that may
+            collect information used to identify you.</p>
+
+        <h2>2. Third-Party Services</h2>
+        <p>Our Service may use third-party tools and services (such as Google AdMob for advertisements and Google
+            Analytics for crash reporting). These third-party services may collect usage data, device information, and
+            IP addresses to provide personalized advertisements or analytics. Link to the privacy policy of third-party
+            service providers used by our apps:</p>
+        <ul>
+            <li><a href="https://policies.google.com/privacy" target="_blank"
+                    style="color: var(--accent-cyan); text-decoration: underline;">Google Play Services</a></li>
+            <li><a href="https://support.google.com/admob/answer/6128543" target="_blank"
+                    style="color: var(--accent-cyan); text-decoration: underline;">AdMob</a></li>
+        </ul>
+
+        <h2>3. Log Data</h2>
+        <p>We want to inform you that whenever you use our Service, in a case of an error in the app we collect data and
+            information (through third-party products) on your phone called Log Data. This Log Data may include
+            information such as your device Internet Protocol ("IP") address, device name, operating system version, the
+            configuration of the app when utilizing our Service, the time and date of your use of the Service, and other
+            statistics.</p>
+
+        <h2>4. Children's Privacy</h2>
+        <p>These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable
+            information from children under 13. In the case we discover that a child under 13 has provided us with
+            personal information, we immediately delete this from our servers. If you are a parent or guardian and you
+            are aware that your child has provided us with personal information, please contact us so that we will be
+            able to do necessary actions.</p>
+
+        <h2>5. Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically
+            for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These
+            changes are effective immediately after they are posted on this page.</p>
+
+        <h2>6. Contact Us</h2>
+        <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us via the
+            contact form on our homepage.</p>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <a href="index.html">USG<span class="accent">Studio</span></a>
+            </div>
+            <p class="copyright">&copy; 2026 USGStudio. All rights reserved. | <a href="privacy-policy.html"
+                    style="color: var(--text-secondary); text-decoration: underline;">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".nav-links");
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            });
+
+            const cursor = document.getElementById('custom-cursor');
+            if (window.matchMedia("(pointer: fine)").matches) {
+                document.addEventListener('mousemove', (e) => {
+                    cursor.style.left = e.clientX + 'px';
+                    cursor.style.top = e.clientY + 'px';
+                });
+                const interactives = document.querySelectorAll('a, button, input, textarea');
+                interactives.forEach(el => {
+                    el.addEventListener('mouseenter', () => cursor.classList.add('hovering'));
+                    el.addEventListener('mouseleave', () => cursor.classList.remove('hovering'));
+                });
+            } else {
+                cursor.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>
