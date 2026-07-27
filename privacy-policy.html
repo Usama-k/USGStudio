@@ -4,181 +4,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy for Classic Snake Game | RIORASH LLC</title>
-    <meta name="description" content="Privacy Policy for Classic Snake Game developed by RIORASH LLC.">
-
-    <!-- Link to Stylesheet -->
+    <title>Privacy Policy | Classic Snake Game</title>
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        .page-header {
-            padding: 150px 0 50px;
-            text-align: center;
+        .policy-container {
+            max-width: 800px;
+            margin: 150px auto 100px;
+            padding: 0 2rem;
+            color: var(--text-secondary);
         }
 
-        .content-section {
-            padding: 50px 0 100px;
+        .policy-container h1,
+        .policy-container h2 {
+            color: var(--text-main);
+            margin-bottom: 1rem;
         }
 
-        .content-section h2 {
-            margin-top: 30px;
-            margin-bottom: 15px;
-            color: #fff;
+        .policy-container h1 {
+            font-size: 2.5rem;
         }
 
-        .content-section p {
-            margin-bottom: 15px;
-            color: #aaa;
-            line-height: 1.6;
+        .policy-container h2 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
         }
 
-        .content-section ul {
-            margin-bottom: 15px;
-            padding-left: 20px;
-            color: #aaa;
+        .policy-container p,
+        .policy-container li {
+            margin-bottom: 1rem;
+            line-height: 1.8;
         }
 
-        .content-section li {
-            margin-bottom: 10px;
-        }
-
-        .content-section a {
-            color: #4a90e2;
-            text-decoration: none;
-        }
-
-        .content-section a:hover {
-            text-decoration: underline;
+        .policy-container ul {
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+            list-style: disc;
         }
     </style>
 </head>
 
 <body>
-    <!-- Custom Tech Cursor -->
-    <div class="cursor-dot" id="cursor-dot"></div>
-    <div class="cursor-reticle" id="cursor-reticle">
-        <div class="reticle-line top"></div>
-        <div class="reticle-line bottom"></div>
-        <div class="reticle-line left"></div>
-        <div class="reticle-line right"></div>
-    </div>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="custom-cursor"></div>
 
-    <!-- Navigation -->
-    <header id="header">
+    <!-- Navbar -->
+    <header id="navbar">
         <div class="container nav-container">
-            <a href="index.html" class="logo gradient-text">RioRash</a>
-
-            <nav class="nav-links" id="nav-links">
-                <a href="index.html#home">Home</a>
-                <a href="index.html#services">Services</a>
-                <a href="index.html#about">Why Us</a>
-                <a href="index.html#contact" class="btn btn-primary">Get in Touch</a>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Logo.png" alt="USGStudio Logo" class="nav-logo-img" style="height: 40px; width: auto;">
+                    <span class="accent">Studio</span>
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html#hero">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#portfolio">Games</a></li>
+                    <li><a href="index.html#contact" class="btn btn-outline">Contact Us</a></li>
+                </ul>
             </nav>
-
-            <button class="mobile-menu-btn" id="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
-            </button>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
     </header>
 
-    <div class="page-header">
-        <div class="container">
-            <h1 class="gradient-text">Privacy Policy</h1>
-            <p style="margin-top:20px;color:#aaa;">
-                <strong>Developer:</strong> RIORASH LLC<br>
-                <strong>Application:</strong> Classic Snake Game
-            </p>
-        </div>
-    </div>
+    <main class="policy-container">
+        <h1 class="gradient-text">Privacy Policy for Classic Snake Game</h1>
+        <p><strong>Effective Date: July 2026</strong></p>
+        <p><strong>Developer:</strong> RIORASH LLC<br>
+        <strong>Application:</strong> Classic Snake Game</p>
 
-    <section class="content-section">
-        <div class="container">
-            <h2>Privacy Policy for Classic Snake Game</h2>
-            <p><strong>Effective Date:</strong> July 2026</p>
-            <p>This Privacy Policy describes how RIORASH LLC ("we," "our," or "us") handles information when you use the
-                Classic Snake Game mobile application ("App").</p>
+        <p>This Privacy Policy explains how RIORASH LLC ("we," "our," or "us") handles information when you use the Classic Snake Game mobile application ("App").</p>
 
-            <h2>About the App</h2>
-            <p>Classic Snake Game is a simple offline arcade game developed by RIORASH LLC. The App is designed for
-                entertainment and does not require users to create an account or provide personal information.</p>
+        <h2>About the App</h2>
+        <p>Classic Snake Game is a simple offline arcade game developed by RIORASH LLC. The App is designed for entertainment and does not require users to create an account or provide personal information.</p>
 
-            <h2>Information We Collect</h2>
-            <p>We do not collect, store, transmit, or share any personal information or sensitive user data.</p>
-            <p>The App does not require:</p>
-            <ul>
-                <li>User registration</li>
-                <li>Login or authentication</li>
-                <li>Access to contacts</li>
-                <li>Access to location</li>
-                <li>Access to camera</li>
-                <li>Access to microphone</li>
-                <li>Access to photos or files</li>
-                <li>Any personal information from users</li>
-            </ul>
+        <h2>Information We Collect</h2>
+        <p>We do not collect, store, transmit, or share any personal information or sensitive user data.</p>
+        <p>The App does not require or request access to:</p>
+        <ul>
+            <li>User registration or login</li>
+            <li>Contacts</li>
+            <li>Location</li>
+            <li>Camera</li>
+            <li>Microphone</li>
+            <li>Photos or media files</li>
+            <li>Any personal information</li>
+        </ul>
 
-            <h2>Offline Functionality</h2>
-            <p>Classic Snake Game is designed to work offline. The App does not communicate with our servers because we
-                do not operate any backend services for this App.</p>
+        <h2>Offline Functionality</h2>
+        <p>Classic Snake Game is designed to work entirely offline. The App does not communicate with our servers because RIORASH LLC does not operate any backend services for this application.</p>
 
-            <h2>Third-Party Services</h2>
-            <p>This App does not use third-party services that collect user data.</p>
+        <h2>Third-Party Services</h2>
+        <p>Classic Snake Game does not use third-party services that collect, process, or share user data.</p>
 
-            <h2>Children's Privacy</h2>
-            <p>Classic Snake Game is intended for a general audience. We do not knowingly collect any personal
-                information from children or any other users.</p>
+        <h2>Children's Privacy</h2>
+        <p>Classic Snake Game is intended for a general audience. We do not knowingly collect personal information from children or any other users.</p>
 
-            <h2>Data Security</h2>
-            <p>Since we do not collect or store user data, there is no personal information maintained by RIORASH LLC
-                through this App.</p>
+        <h2>Data Security</h2>
+        <p>Since we do not collect or store personal information, there is no user data maintained by RIORASH LLC through this App.</p>
 
-            <h2>Changes to This Privacy Policy</h2>
-            <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page, and the
-                Effective Date will be updated accordingly.</p>
+        <h2>Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page, and the Effective Date will be updated accordingly.</p>
 
-            <h2>Contact Us</h2>
-
-            <p>If you have any questions or concerns regarding this Privacy Policy, you may contact us using the information below.</p>
-
-            <p>
-                <strong>Developer:</strong> RIORASH LLC<br>
-                <strong>Application:</strong> Classic Snake Game<br>
-                <strong>Email:</strong> <a href="mailto:hello@riorash.me">admin@riorash.me</a><br>
-            </p>
-        </div>
-    </section>
+        <h2>Contact Us</h2>
+        <p>If you have any questions or concerns regarding this Privacy Policy, please contact us:</p>
+        <p>
+            <strong>RIORASH LLC</strong><br>
+            Developer of Classic Snake Game<br>
+            Website: <a href="https://riorash.me" target="_blank" style="color: var(--accent-cyan); text-decoration: underline;">https://riorash.me</a><br>
+            Email: <a href="mailto:hello@riorash.me" style="color: var(--accent-cyan); text-decoration: underline;">hello@riorash.me</a>
+        </p>
+    </main>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <a href="index.html" class="logo gradient-text footer-logo">RioRash</a>
-                    <p>Empowering businesses through cutting-edge technology. We build the digital foundation for your
-                        future.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html#home">Home</a></li>
-                        <li><a href="index.html#services">Services</a></li>
-                        <li><a href="index.html#about">About Us</a></li>
-                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    
-                </div>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <a href="index.html">USG<span class="accent">Studio</span></a>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 RIORASH LLC. All rights reserved.</p>
-            </div>
+            <p class="copyright">&copy; 2026 USGStudio. All rights reserved. | <a href="privacy-policy.html"
+                    style="color: var(--text-secondary); text-decoration: underline;">Privacy Policy</a></p>
         </div>
     </footer>
 
-    <!-- Link to JavaScript -->
-    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".nav-links");
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            });
+
+            const cursor = document.getElementById('custom-cursor');
+            if (window.matchMedia("(pointer: fine)").matches) {
+                document.addEventListener('mousemove', (e) => {
+                    cursor.style.left = e.clientX + 'px';
+                    cursor.style.top = e.clientY + 'px';
+                });
+                const interactives = document.querySelectorAll('a, button, input, textarea');
+                interactives.forEach(el => {
+                    el.addEventListener('mouseenter', () => cursor.classList.add('hovering'));
+                    el.addEventListener('mouseleave', () => cursor.classList.remove('hovering'));
+                });
+            } else {
+                cursor.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 
 </html>
